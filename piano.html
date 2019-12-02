@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://my-little-piano-app.herokuapp.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="./piano_files/styles.css">
+    <title>Remix Project</title>
+  <!-- <style>
+  </style>  -->
+  </head>
+  <h1 class="centered_header"> Remix Project - Ryan McLean </h1>
+
+  <div class="centered_welcome" id="welcome" style="display: block">
+    Welcome to the website for my remix project! <br/>
+    This is a remix of my cultural artifact (the piano). <br/>
+    On the white keys, you will find a timeline of my experience with piano. <br/>
+    On the black keys, you will find a timeline of Jazz piano history. <br/>
+    Keys that have information will be shaded gray upon hovering, <br/>
+    and clicking on them will yield an event in the timeline. <br/>
+    It is ordered chronologically from left to right. <br/>
+    Enjoy!
+  </div>
+
+  <div class="centered_text" id="early" style="display:none">
+    <img class="centered_picture"src="./photos/early.jpg" alt="HTML5 Icon" width="410" height="340"> </img> <br/>
+    I started playing piano in first grade. I played throughout elementary school, but stopped when my teacher retired.
+  </div>
+
+  <div class="centered_text" id="horn" style="display:none">
+    <img class="centered_picture"src="./photos/horn.jpg" alt="HTML5 Icon" width="250" height="340"> </img> <br/>
+    In middle school, I continued playing music by picking up the French horn and played throughout high school.
+  </div>
+
+  <div class="centered_text" id="piano" style="display:none">
+    <img class="centered_picture"src="./photos/piano.jpg" alt="HTML5 Icon" width="260" height="340"> </img> <br/>
+    Senior year of high school, I decided to play piano again.
+  </div>
+
+  <div class="centered_text" id="family" style="display:none">
+    <img class="centered_picture"src="./photos/family.jpg" alt="HTML5 Icon" width="500" height="340"> </img> <br/>
+    Playing piano reminded me of my family...
+  </div>
+
+  <div class="centered_text" id="friend" style="display:none">
+    <img class="centered_picture"src="./photos/friend.jpg" alt="HTML5 Icon" width="260" height="340"> </img> <br/>
+    And my friends.
+  </div>
+
+  <div class="centered_text" id="keyboard" style="display:none">
+    <img class="centered_picture"src="./photos/keyboard.jpg" alt="HTML5 Icon" width="750" height="340"> </img> <br/>
+    I continue to play to this day with my keyboard.
+  </div>
+
+  <div class="centered_text" id="scott" style="display:none">
+    <img class="centered_picture"src="./photos/scott.jpg" alt="HTML5 Icon" width="340" height="340"> </img> <br/>
+    Jazz piano was first featured in ragtime in the early 1900s, with Scott Joplin paving the way with his Maple Leaf Rag.
+  </div>
+
+  <div class="centered_text" id="thelonious" style="display:none">
+    <img class="centered_picture"src="./photos/thelonious.jpg" alt="HTML5 Icon" width="340" height="340"> </img> <br/>
+    Soon many different Jazz subgenres emerged including bebop with Theloniuous Monk in the 1940s.
+  </div>
+
+  <div class="centered_text" id="sun" style="display:none">
+    <img class="centered_picture"src="./photos/sun.jpg" alt="HTML5 Icon" width="340" height="340"> </img> <br/>
+    A big innovation happened in the 1950s when Sun Ra introducted electric piano to Jazz.
+  </div>
+
+  <div class="centered_text" id="herbie" style="display:none">
+    <img class="centered_picture"src="./photos/herbie.jpg" alt="HTML5 Icon" width="600" height="340"> </img> <br/>
+    This allowed people like Herbie Hancock to come and revolutionize electro Jazz styles in the 1970s.
+  </div>
+
+  <div class="centered_text" id="glasper" style="display:none">
+    <img class="centered_picture"src="./photos/glasper.jpg" alt="HTML5 Icon" width="650" height="340"> </img> <br/>
+    People still revolutionize today with examples of Robert Glasper fusing Jazz and Hip Hop.
+  </div>
+
+  <div class="centered_text" id="tepfer" style="display:none">
+    <img class="centered_picture"src="./photos/tepfer.jpg" alt="HTML5 Icon" width="600" height="340"> </img> <br/>
+    Or others such as John Tepfer taking an experimental approach by featuring an algorithm that improvises with him.
+  </div>
+
+  <body>
+
+<svg class="centered_bottom" height="230" width="1000">
+
+<polygon onclick="set('early')" points="200,10 230,10 230,135 245,135 245,220 200,220 200,10" class="white" data-key="65"></polygon>
+
+<polygon points="245,135 260,135 260,10 275,10 275,135 290,135 290,220 245,220 245,135" class="white2" data-key="83" ></polygon>
+
+<polygon onclick="set('horn')" points="305,10 335,10 335,220 290,220 290,135 305,135 305,10" class="white" data-key="68" ></polygon>
+
+<polygon points="335,10 365,10 365,135 380,135 380,220 335,220 335,10" class="white2" data-key="70" ></polygon>
+
+<polygon onclick="set('piano')" points="380,135 395,135 395,10 410,10 410,135 425,135 425,220 380,220 380,135" class="white" data-key="71" ></polygon>
+
+<polygon points="425,135 440,135 440,10 455,10 455,135 470,135 470,220 425,220 425,135" class="white2" data-key="72" ></polygon>
+
+<polygon points="470,135 485,135 485,10 515,10 515,220 470,220 470,135" class="white2" data-key="74" ></polygon>
+
+<polygon onclick="set('family')" points="515,10 545,10 545,135 560,135 560,220 515,220 515,10" class="white" data-key="82" ></polygon>
+
+<polygon points="560,135 575,135 575,10 590,10 590,135 605,135 605,220 560,220" class="white2" data-key="84" ></polygon>
+
+<polygon onclick="set('friend')" points="605,135 620,135 620,10 650,10 650,220 605,220 605,135" class="white" data-key="89" ></polygon>
+
+<polygon points="650,10 680,10 680,135 695,135 695,220 650,220 650,10" class="white2" data-key="85" ></polygon>
+
+<polygon onclick="set('keyboard')" points="695,135 710,135 710,10 725,10 725,135 740,135 740,220 695,220 695,135" class="white" data-key="73" ></polygon>
+
+<polygon points="740,135 755,135 755,10 770,10 770,135 785,135 785,220 740,220 740,135" class="white2" data-key="79" ></polygon>
+
+<polygon points="785,135 800,135 800,10 830,10 830,220 785,220 785,135" class="white2" data-key="80" ></polygon>
+
+<polygon onclick="set('scott')" points="230,10 260,10 260,135 230,135 230,10" class="black" data-key="49" ></polygon>
+
+<polygon points="275,10 305,10 305,135 275,135 275,10" class="black2" data-key="50" ></polygon>
+
+<polygon onclick="set('thelonious')" points="365,10 395,10 395,135 365,135 365,10" class="black" data-key="51" ></polygon>
+
+<polygon points="410,10 440,10 440,135 410,135 410,10" class="black2" data-key="52" ></polygon>
+
+<polygon onclick="set('sun')" points="455,10 485,10 485,135 455,135 455,10" class="black" data-key="53" ></polygon>
+
+<polygon onclick="set('herbie')" points="545,10 575,10 575,135 545,135 545,10" class="black" data-key="54" ></polygon>
+
+<polygon points="590,10 620,10 620,135 590,135 590,10" class="black2" data-key="55" ></polygon>
+
+<polygon onclick="set('glasper')" points="680,10 710,10 710,135 680,135 680,10" class="black" data-key="56" ></polygon>
+
+<polygon points="725,10 755,10 755,135 725,135 725,10" class="black2" data-key="57" ></polygon>
+
+<polygon onclick="set('tepfer')" points="770,10 800,10 800,135 770,135 770,10" class="black" data-key="48" id="key4"></polygon>
+
+</svg>
+
+<script>
+function set(name) {
+  clearall();
+  var x = document.getElementById(name);
+  x.style.display = "block";
+}
+function clearall() {
+  var ids = ["welcome", "early", "horn", "piano", "family", "friend", "keyboard", "scott", "thelonious", "sun", "herbie", "glasper", "tepfer"];
+  for (i = 0; i < ids.length; i++) {
+    var y = document.getElementById(ids[i]);
+    y.style.display = "none";
+  }
+}
+</script>
+
+<!--
+<script>
+function setEarly() {
+  var x = document.getElementById("early");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }
+  else {
+    x.style.display = "none";
+  }
+}
+</script> -->
+
+</body></html>
