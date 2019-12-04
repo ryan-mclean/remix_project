@@ -8,6 +8,12 @@ h1 {
   font-size: 48px
 }
 
+.welcome_style {
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+}
+
 .centered_header {
   position: fixed;
   top: 20px;
@@ -18,7 +24,7 @@ h1 {
 
 .centered_welcome {
   position: fixed;
-  top: 200px;
+  top: 275px;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
@@ -98,6 +104,10 @@ h1 {
 .black2:hover {
   stroke:lightblue;
   stroke-width:2;
+}
+
+div {
+  font-size: 18px;
 }
 
 /*
